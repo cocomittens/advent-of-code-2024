@@ -75,6 +75,7 @@ def is_safe_with_dampener(level):
 
 def calculate_safe_reports(allow_bad=False):
     safe_reports = 0
+
     for report in reports:
         if allow_bad:
             if is_safe_with_dampener(report):
@@ -82,6 +83,7 @@ def calculate_safe_reports(allow_bad=False):
         else:
             if is_safe(report):
                 safe_reports += 1
+
     return safe_reports
 
 if __name__ == '__main__':
