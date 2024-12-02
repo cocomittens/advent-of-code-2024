@@ -10,7 +10,6 @@ def process_data():
         reports.append(levels)
 
 # Returns if a level is safe
-# A bit messy tbh but it works
 def is_safe(level):
     prev = level[0]
     is_decreasing = False
@@ -37,6 +36,7 @@ def is_safe(level):
     return True
 
 # Returns if a level is safe, allowing 1 bad row removal
+# A bit messy tbh but it works
 def is_safe_with_dampener(level):
     prev = level[0]
     is_decreasing = False
