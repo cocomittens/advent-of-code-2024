@@ -9,6 +9,7 @@ def process_data():
         levels = list(map(int, row.split(" ")))
         reports.append(levels)
 
+# Returns if a level is safe
 def is_safe(level):
     prev = level[0]
     is_decreasing = False
@@ -34,6 +35,7 @@ def is_safe(level):
 
     return True
 
+# Returns if a level is safe, allowing 1 bad row removal
 def is_safe_with_dampener(level):
     prev = level[0]
     is_decreasing = False
@@ -73,6 +75,7 @@ def is_safe_with_dampener(level):
 
     return True
 
+# Calculate total number of safe reports
 def calculate_safe_reports(allow_bad=False):
     safe_reports = 0
 
