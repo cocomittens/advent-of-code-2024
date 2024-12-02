@@ -10,6 +10,7 @@ def process_data():
         reports.append(levels)
 
 # Returns if a level is safe
+# A bit messy tbh but it works
 def is_safe(level):
     prev = level[0]
     is_decreasing = False
