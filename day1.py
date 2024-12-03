@@ -1,4 +1,4 @@
-from day1_data import data
+from data.day1_data import data
 import heapq
 
 left = []

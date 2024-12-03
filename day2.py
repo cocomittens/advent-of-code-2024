@@ -1,4 +1,4 @@
-from day2_data import data
+from data.day2_data import data
 
 reports = []
 
